@@ -27,6 +27,16 @@ Protocolo: una línea JSON por mensaje.
 - [`uv`](https://docs.astral.sh/uv/) (recomendado; gestiona Python y dependencias).
 - Claude Desktop o Claude Code.
 
+## Instalación rápida (automática)
+
+1. Descomprime `rhino7-mcp.zip` en una carpeta fija (por ejemplo `C:\rhino7-mcp` o `~/rhino7-mcp`). No la muevas después: la configuración guarda esa ruta.
+2. Ejecuta el instalador. Instala `uv` y las dependencias, y configura Claude Desktop (y Claude Code, si está instalado):
+   - **Windows**: clic derecho en `instalar_windows.ps1` > *Ejecutar con PowerShell*.
+   - **macOS**: en Terminal, dentro de la carpeta, `bash instalar_mac.sh`.
+3. Reinicia Claude Desktop.
+4. En Rhino 7 ejecuta `_-RunPythonScript "<carpeta>/rhino_plugin/rhino_mcp_listener.py"`. El instalador te muestra la línea exacta.
+5. En Claude, pide: *"Haz ping a Rhino"*.
+
 ## Instalación paso a paso
 
 ### a) Instalar uv
